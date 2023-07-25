@@ -3,9 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stye.css" />
     <title>Random Quote Generator</title>
   </head>
   <body>
+    <main class="container">
+      <h1>Get a Random Quote from a topic below</h1>
+      <div class="quote__buttons">
+        <button data-cat="inspirational">inspirational</button>
+        <button data-cat="history">history</button>
+        <button data-cat="wisdom">wisdom</button>
+        <button data-cat="famous-quote">famous</button>
+        <button data-cat="technology">tech</button>
+        <button data-cat="sports">sports</button>
+      </div>
+
+      <blockquote>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+          iste nam quibusdam, debitis inventore unde cupiditate omnis voluptate.
+        </p>
+        <cite>Lorim Ypsumm</cite>
+      </blockquote>
+
+      <div class="quote__lines">
+        <span class="quote__line"></span>
+        <span class="quote__icon"><i class="fa-solid fa-quote-left"></i></span>
+        <span class="quote__line"></span>
+      </div>
+
+      <button class="btn-cta">
+        Get new quote <i class="fa-solid fa-dice"></i>
+      </button>
+    </main>
+
     <script src="app.js"></script>
   </body>
 </html>

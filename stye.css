@@ -1,0 +1,115 @@
+:root {
+  --dark-black: #353535;
+  --light-black: #535353;
+  --white: snow;
+  --accent: rgb(160, 93, 226);
+  --light-accent: rgb(158, 101, 214);
+  --dark-accent: rgb(89, 22, 156);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  /* background-color: #353535; */
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.87),
+      rgba(0, 0, 0, 0.87)
+    ),
+    url("./pattern.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: snow;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  display: grid;
+  align-content: center;
+}
+
+h1 {
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  background-color: var(--light-black);
+  color: var(--white);
+  border: none;
+  transition: color 0.2s ease;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+button:hover,
+button.active {
+  background-color: var(--dark-accent);
+}
+
+.btn-cta {
+  background-color: var(--accent);
+  font-size: 1rem;
+}
+
+.btn-cta:hover {
+  background-color: var(--light-accent);
+}
+
+.container {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.quote__buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.quote__buttons button {
+  flex-basis: 30%;
+}
+
+blockquote {
+  margin-bottom: 2rem;
+}
+
+blockquote p {
+  margin-bottom: 0.5rem;
+}
+
+cite {
+  text-align: right;
+  display: block;
+  font-size: 0.85rem;
+  color: var(--light-accent);
+}
+
+.quote__lines {
+  margin-bottom: 2rem;
+}
+
+.quote__icon {
+  font-size: 2rem;
+  color: var(--accent);
+}
