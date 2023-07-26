@@ -54,7 +54,7 @@ button {
   background-color: var(--light-black);
   color: var(--white);
   border: none;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
   border-radius: 3px;
   font-size: 0.85rem;
   letter-spacing: 0.5px;
@@ -68,30 +68,37 @@ button.active {
 .btn-cta {
   background-color: var(--accent);
   font-size: 1rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .btn-cta:hover {
-  background-color: var(--light-accent);
+  background-color: var(--white);
+  color: var(--accent);
 }
 
 .container {
   width: 90%;
+  max-width: 350px;
   margin: 2rem auto;
 }
 
-.quote__buttons {
+.quote__categories {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0.5rem;
   margin-bottom: 2rem;
 }
 
-.quote__buttons button {
+.quote__categories button {
   flex-basis: 30%;
 }
 
 blockquote {
   margin-bottom: 2rem;
+  background-color: var(--dark-black);
+  padding: 2rem;
+  border-radius: 3px;
 }
 
 blockquote p {
@@ -102,14 +109,36 @@ cite {
   text-align: right;
   display: block;
   font-size: 0.85rem;
-  color: var(--light-accent);
+  color: var(--accent);
 }
 
 .quote__lines {
   margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quote__line {
+  height: 2px;
+  flex-basis: 30%;
+  background-color: var(--white);
+  opacity: 0.7;
 }
 
 .quote__icon {
-  font-size: 2rem;
+  font-size: 3rem;
+  color: var(--light-accent);
+}
+
+.error-message {
+  opacity: 0;
   color: var(--accent);
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: opacity 0.2s ease;
+}
+
+.show {
+  opacity: 1;
 }

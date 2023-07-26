@@ -27,32 +27,28 @@
   <body>
     <main class="container">
       <h1>Get a Random Quote from a topic below</h1>
-      <div class="quote__buttons">
+      <div class="quote__categories">
         <button data-cat="inspirational">inspirational</button>
         <button data-cat="history">history</button>
         <button data-cat="wisdom">wisdom</button>
-        <button data-cat="famous-quote">famous</button>
+        <button data-cat="famous-quotes">famous</button>
         <button data-cat="technology">tech</button>
         <button data-cat="sports">sports</button>
       </div>
 
-      <blockquote>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
-          iste nam quibusdam, debitis inventore unde cupiditate omnis voluptate.
-        </p>
-        <cite>Lorim Ypsumm</cite>
-      </blockquote>
+      <blockquote></blockquote>
 
       <div class="quote__lines">
-        <span class="quote__line"></span>
-        <span class="quote__icon"><i class="fa-solid fa-quote-left"></i></span>
-        <span class="quote__line"></span>
+        <div class="quote__line"></div>
+        <div class="quote__icon"><i class="fa-solid fa-quote-left"></i></div>
+        <div class="quote__line"></div>
       </div>
 
       <button class="btn-cta">
         Get new quote <i class="fa-solid fa-dice"></i>
       </button>
+
+      <p class="error-message">Please select a category from above first</p>
     </main>
 
     <script src="app.js"></script>
